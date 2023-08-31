@@ -32,6 +32,13 @@ export const Page = () => {
   const [mounted, setMounted] = useState(false);
   const {theme, setTheme} = useTheme();
 
+  if (theme === "system") {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  }
   const handleKeyPress = (event: KeyboardEvent<HTMLInputElement>) => {
     if (event.key === "Enter" && input !== "") {
       const newItem: ListItem = {
