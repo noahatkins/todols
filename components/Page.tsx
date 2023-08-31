@@ -128,7 +128,7 @@ export const Page = () => {
       </div>
       <div className="w-full flex justify-center flex-col items-center grow">
         <VerticalSpacer size={10} />
-        <div className="w-full max-w-screen-lg px-5 flex justify-between items-center">What do you want to accompolish?</div>
+        <div className="w-full max-w-screen-lg px-5 flex justify-between items-center">What do you want to accomplish?</div>
         <VerticalSpacer size={2} />
         <div className="flex justify-center w-full max-w-screen-lg  px-5">
           <input
