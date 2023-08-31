@@ -1,5 +1,6 @@
 import React from "react";
 import {Check, Star, Trash} from "lucide-react";
+import HorizontalSpacer from "../Spacers/HorizontalSpacer";
 
 interface ListItem {
   id: string;
@@ -39,7 +40,7 @@ const Tasks: React.FC<TasksProps> = ({filteredList, handleItemStatus, handleItem
                   </div>
                 )}
               </div>
-              <div className="w-10"></div>
+              <HorizontalSpacer size={30} />
               <div
                 className={`truncate max-w-[100%] w-2 grow  ${
                   task.status === "complete" ? "line-through text-gray-300 dark:text-slate-700" : "text-gray-500 dark:text-slate-400"
@@ -48,6 +49,7 @@ const Tasks: React.FC<TasksProps> = ({filteredList, handleItemStatus, handleItem
                 {task.input}
               </div>
             </div>
+            <HorizontalSpacer size={30} />
 
             <div className="flex items-center">
               <div
