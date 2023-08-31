@@ -4,7 +4,8 @@ import {switchThemeDuration} from "./constants/switch-theme-duration";
 
 export const metadata = {
   title: "todols",
-  description: "To do list on your local storage",
+  description:
+    "A minimalist to-do list web app built with Next.js, TypeScript, and styled using Tailwind CSS. Easily manage your tasks, with data stored locally for convenience.",
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
