@@ -4,8 +4,29 @@ import {switchThemeDuration} from "./constants/switch-theme-duration";
 
 export const metadata = {
   title: "todols",
-  description:
-    "A minimalist to-do list web app built with Next.js, TypeScript, and styled using Tailwind CSS. Easily manage your tasks, with data stored locally for convenience.",
+  description: "A minimalist to-do list web app built with Next.js, TypeScript, and styled using Tailwind CSS. Easily manage your tasks, with data stored locally for convenience.",
+  openGraph: {
+    title: "todols",
+    description: "A minimalist to-do list web app built with Next.js and TypeScript",
+    url: "https://todols.noahatkins.com",
+    siteName: "todols",
+    images: [
+      {
+        url: "https://todols.noahatkins.com/api/og",
+        width: 1200,
+        height: 630,
+        alt: "todols - A minimalist to-do list web app",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "todols",
+    description: "A minimalist to-do list web app built with Next.js and TypeScript",
+    images: ["https://todols.noahatkins.com/api/og"],
+  },
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
